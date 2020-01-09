@@ -1633,12 +1633,15 @@ export class App extends Component {
           searchResult = { this.searchContacts }
         />
 
-        <Contact contact={ this.state.selectedContactId > 0 ? this.getContact(this.state.selectedContactId) : this.getContact(1)}/>
-
         <ContactList
           contacts = { this.state.contacts }
           showContact = { this.showContact }
         />
+
+        <Contact 
+          contact={ this.state.selectedContactId > 0 ? this.getContact(this.state.selectedContactId) : this.getContact(1)}
+        />
+
 
       </div>
     )

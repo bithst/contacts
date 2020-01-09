@@ -9,7 +9,10 @@ export class ContactList extends Component {
     return (
       <div className="contact-list">
 
-        <div className="contact-list-title">
+        <div className="contact-list--title sticky">
+          <div></div>
+          <div>Name</div>
+          <div>Phone</div>
         </div>
 
         {contacts.map(contact => (

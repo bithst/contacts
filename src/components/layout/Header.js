@@ -7,7 +7,7 @@ export class Header extends Component {
     const { contacts } = this.props;
 
     return (
-      <header className="sticky">
+      <header>
         <div className="logo">
           {'Contact'}
         </div>

@@ -4,9 +4,10 @@ export class ContactListItem extends Component {
   render() {
     const { contact } = this.props;
     return (
-      <div className="contact-list-item" onClick={ this.props.showContact.bind(this, contact.id) }>
+      <div className="contact-list--item" onClick={ this.props.showContact.bind(this, contact.id) }>
         <img src={contact.profileImage} alt="" className="profile-image"/>
         <span>{contact.firstName + ' ' + contact.lastName}</span>
+        <span>{contact.phone}</span>
       </div>
     )
   }
